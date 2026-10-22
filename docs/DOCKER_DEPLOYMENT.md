@@ -1,6 +1,6 @@
 # Docker Deployment Guide
 
-本指南介绍如何使用 Docker 部署 ROMA-01 Trading Platform。
+本指南介绍如何使用 Docker 部署 Ludus Trading Platform。
 
 [English](#english-version) | [中文](#中文版本)
 
@@ -165,16 +165,16 @@ docker-compose up -d backend
 ```bash
 # 构建镜像
 cd backend
-docker build -t roma-01-backend .
+docker build -t ludus-backend .
 
 # 运行容器
 docker run -d \
-  --name roma-backend \
+  --name ludus-backend \
   -p 8080:8080 \
   -v $(pwd)/config:/app/config \
   -v $(pwd)/logs:/app/logs \
   --env-file ../.env \
-  roma-01-backend
+  ludus-backend
 ```
 
 ### 生产环境部署建议
@@ -225,7 +225,7 @@ services:
 volumes:
   - ./backend/logs:/app/logs
   - ./backend/data:/app/data
-  - roma-db:/app/database
+  - ludus-db:/app/database
 ```
 
 #### 5. 反向代理
@@ -273,7 +273,7 @@ docker-compose build backend
 docker version --format '{{.Server.Arch}}'
 
 # 查看镜像架构
-docker inspect roma-demo-backend | grep Architecture
+docker inspect ludus-demo-backend | grep Architecture
 ```
 
 ### 故障排查
@@ -318,7 +318,7 @@ docker-compose config
 docker stats
 
 # 检查容器健康状态
-docker inspect --format='{{json .State.Health}}' roma-backend | jq
+docker inspect --format='{{json .State.Health}}' ludus-backend | jq
 ```
 
 ### 更新部署
@@ -496,16 +496,16 @@ docker-compose up -d backend
 ```bash
 # Build image
 cd backend
-docker build -t roma-01-backend .
+docker build -t ludus-backend .
 
 # Run container
 docker run -d \
-  --name roma-backend \
+  --name ludus-backend \
   -p 8080:8080 \
   -v $(pwd)/config:/app/config \
   -v $(pwd)/logs:/app/logs \
   --env-file ../.env \
-  roma-01-backend
+  ludus-backend
 ```
 
 ### Production Deployment Best Practices
@@ -556,7 +556,7 @@ Ensure important data is persisted:
 volumes:
   - ./backend/logs:/app/logs
   - ./backend/data:/app/data
-  - roma-db:/app/database
+  - ludus-db:/app/database
 ```
 
 #### 5. Reverse Proxy
@@ -604,7 +604,7 @@ Standard usage, build time approximately 5-8 minutes.
 docker version --format '{{.Server.Arch}}'
 
 # Check image architecture
-docker inspect roma-demo-backend | grep Architecture
+docker inspect ludus-demo-backend | grep Architecture
 ```
 
 ### Troubleshooting
@@ -649,7 +649,7 @@ docker-compose config
 docker stats
 
 # Check container health status
-docker inspect --format='{{json .State.Health}}' roma-backend | jq
+docker inspect --format='{{json .State.Health}}' ludus-backend | jq
 ```
 
 ### Updating Deployment

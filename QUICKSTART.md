@@ -1,8 +1,8 @@
-# ROMA-01 Quick Start Guide
+# Ludus Quick Start Guide
 
 ## 🎯 Goal
 
-Get ROMA-01 Trading Platform running in 5 minutes.
+Get Ludus Trading Platform running in 5 minutes.
 
 ## 📋 Prerequisites
 
@@ -26,7 +26,7 @@ Before starting, make sure you have:
 **Option A: Automatic Setup (Recommended) 🚀**
 
 ```bash
-cd /path/to/roma-01/backend
+cd /path/to/ludus-trading/backend
 ./setup.sh
 ```
 
@@ -39,7 +39,7 @@ The script will automatically:
 
 ```bash
 # Navigate to the project directory
-cd /path/to/roma-01/backend
+cd /path/to/ludus-trading/backend
 
 # Check Python version (must be 3.12 or 3.13)
 python3 --version
@@ -117,7 +117,7 @@ For detailed configuration options, see [backend/config/README.md](backend/confi
 **Option A: Using Start Script (Recommended) 🚀**
 
 ```bash
-cd /path/to/roma-01/backend
+cd /path/to/ludus-trading/backend
 ./start.sh
 ```
 
@@ -125,7 +125,7 @@ cd /path/to/roma-01/backend
 
 ```bash
 # Make sure you're in the backend directory
-cd /path/to/roma-01/backend
+cd /path/to/ludus-trading/backend
 
 # Activate virtual environment (if not already activated)
 source venv/bin/activate
@@ -137,7 +137,7 @@ python -m roma_trading.main
 You should see:
 
 ```
-🚀 Starting ROMA Trading Platform
+🚀 Starting Ludus Trading Platform
 API Server: http://0.0.0.0:8080
 Initialized TradingAgent: deepseek_aggressive
 All agents started successfully
@@ -151,7 +151,7 @@ Open a **NEW terminal**:
 
 ```bash
 # Navigate to frontend directory
-cd /path/to/roma-01/frontend
+cd /path/to/ludus-trading/frontend
 
 # Install dependencies
 npm install
@@ -191,7 +191,7 @@ You should see:
 
 ## 🎉 Success!
 
-Your ROMA-01 Trading Platform is now running!
+Your Ludus Trading Platform is now running!
 
 ## 📊 What Happens Next?
 
@@ -235,7 +235,7 @@ Watch the backend terminal for:
 **ModuleNotFoundError: No module named 'roma_trading':**
 ```bash
 # Make sure you activated the virtual environment!
-cd /path/to/roma-01/backend
+cd /path/to/ludus-trading/backend
 source venv/bin/activate
 python -m roma_trading.main
 ```

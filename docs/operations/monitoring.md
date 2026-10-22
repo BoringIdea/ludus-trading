@@ -1,6 +1,6 @@
 # Monitoring Guide
 
-How to monitor and maintain your ROMA-01 trading platform in production.
+How to monitor and maintain your Ludus trading platform in production.
 
 ---
 
@@ -219,7 +219,7 @@ echo "🤖 Running Agents: $RUNNING"
 crontab -e
 
 # Add this line:
-*/5 * * * * /path/to/monitor.sh >> /var/log/roma01-monitor.log 2>&1
+*/5 * * * * /path/to/monitor.sh >> /var/log/ludus-monitor.log 2>&1
 ```
 
 ### System Resource Monitoring
@@ -267,7 +267,7 @@ from email.mime.text import MIMEText
 
 def send_email_alert(subject: str, body: str):
     msg = MIMEText(body)
-    msg['Subject'] = f"ROMA-01 Alert: {subject}"
+    msg['Subject'] = f"Ludus Alert: {subject}"
     msg['From'] = "alerts@yourdomain.com"
     msg['To'] = "you@email.com"
     
@@ -617,7 +617,7 @@ curl -s http://localhost:8080/api/agents/deepseek-chat-v3.1/performance | jq '{
 # backup.sh
 
 DATE=$(date +%Y%m%d_%H%M%S)
-BACKUP_DIR="backups/roma01_$DATE"
+BACKUP_DIR="backups/ludus_$DATE"
 
 mkdir -p "$BACKUP_DIR"
 
@@ -675,8 +675,8 @@ echo "✅ Backup created: ${BACKUP_DIR}.tar.gz"
 ### Getting Help
 
 1. Check [Troubleshooting Guide](../user-guide/troubleshooting.md)
-2. Search [GitHub Issues](https://github.com/lukema95/roma-01/issues)
-3. Ask in [Discussions](https://github.com/lukema95/roma-01/discussions)
+2. Search [GitHub Issues](https://github.com/BoringIdea/ludus-trading/issues)
+3. Ask in [Discussions](https://github.com/BoringIdea/ludus-trading/discussions)
 4. Contact: lukema95@github.com
 
 ---

@@ -1,5 +1,5 @@
 """
-ROMA-01: AI-Powered Crypto Trading Platform - Main Entry Point
+Ludus: AI-Powered Crypto Trading Platform - Main Entry Point
 
 Starts the FastAPI server with all trading agents.
 
@@ -34,7 +34,7 @@ def main():
     settings = get_settings()
     
     logger.info("="*60)
-    logger.info("🚀 Starting ROMA-01 Trading Platform")
+    logger.info("🚀 Starting Ludus Trading Platform")
     logger.info("="*60)
     logger.info(f"API Server: http://{settings.api_host}:{settings.api_port}")
     logger.info(f"CORS Origins: {settings.cors_origins}")

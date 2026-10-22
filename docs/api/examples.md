@@ -1,6 +1,6 @@
 # API Usage Examples
 
-Practical examples of using the ROMA-01 API in different programming languages.
+Practical examples of using the Ludus API in different programming languages.
 
 ---
 
@@ -23,7 +23,7 @@ import json
 
 BASE_URL = "http://localhost:8080"
 
-class RomaClient:
+class LudusClient:
     def __init__(self, base_url: str = "http://localhost:8080"):
         self.base_url = base_url
     
@@ -32,7 +32,7 @@ class RomaClient:
         response.raise_for_status()
         return response.json()
 
-client = RomaClient()
+client = LudusClient()
 ```
 
 ### Get All Agents
@@ -545,7 +545,7 @@ export function AgentCard({ agentId }: { agentId: string }) {
 ### WebSocket with Auto-Reconnect
 
 ```javascript
-class RomaWebSocket {
+class LudusWebSocket {
   constructor(agentId) {
     this.agentId = agentId;
     this.url = `ws://localhost:8080/ws/agents/${agentId}`;
@@ -604,7 +604,7 @@ class RomaWebSocket {
 }
 
 // Usage
-const monitor = new RomaWebSocket('deepseek-chat-v3.1');
+const monitor = new LudusWebSocket('deepseek-chat-v3.1');
 
 monitor
   .on('account_update', (data) => {
@@ -680,7 +680,7 @@ curl "http://localhost:8080/api/market/prices?symbols=BTCUSDT,ETHUSDT" | jq '.'
 AGENT_ID="deepseek-chat-v3.1"
 BASE_URL="http://localhost:8080"
 
-echo "📊 ROMA-01 Agent Monitor"
+echo "📊 Ludus Agent Monitor"
 echo "Agent: $AGENT_ID"
 echo "========================"
 

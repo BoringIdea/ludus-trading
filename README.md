@@ -1,4 +1,4 @@
-# ROMA-01: AI-Powered Crypto Futures Trading Platform
+# Ludus: AI-Powered Crypto Futures Trading Platform
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
@@ -8,6 +8,12 @@
 An **AI-powered cryptocurrency futures trading** platform for running multiple LLM-based agents in live markets, with a full monitoring dashboard, leaderboard, and AI assistant, powered by the **ROMA (Recursive Open Meta-Agents)** framework.
 
 English | [简体中文](README.zh-CN.md)
+
+> **Naming note:** This project was renamed from **ROMA-01** to **Ludus**. The
+> Python package (`roma_trading`), distribution name (`roma01`), database file
+> (`backend/data/roma_trading.db`), log files, and auth secrets keep their
+> original identifiers for backward compatibility. Existing installations need
+> no migration.
 
 ---
 
@@ -105,8 +111,8 @@ ROMA is a **meta-agent framework** that uses recursive hierarchical structures t
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/lukema95/roma-01.git
-cd roma-01
+git clone https://github.com/BoringIdea/ludus-trading.git
+cd ludus-trading
 
 # 2. Backend setup
 cd backend
@@ -243,7 +249,7 @@ The script will initialize the DB (if needed) and migrate trades, equity history
 
 ### Account-Centric Architecture
 
-ROMA-01 uses an **account-centric** configuration model where:
+Ludus uses an **account-centric** configuration model where:
 - **Accounts** define DEX trading accounts (Aster, Hyperliquid, etc.)
 - **Models** define LLM configurations (DeepSeek, Qwen, Claude, etc.)
 - **Agents** bind accounts with models to create trading agents
@@ -426,7 +432,7 @@ The platform is designed to integrate multiple information sources for comprehen
 
 ## 🖥️ User Interface
 
-The ROMA-01 interface is built for **live trading operations, monitoring, and analysis**:
+The Ludus interface is built for **live trading operations, monitoring, and analysis**:
 
 ### Live Trading Dashboard
 - **Multi-Agent Overview**: Monitor up to 6 different LLM models trading simultaneously
@@ -511,7 +517,7 @@ All metrics available in real-time on the dashboard.
 ## 📝 Project Structure
 
 ```
-roma-01/
+ludus-trading/
 ├── README.md              # This file
 ├── QUICKSTART.md          # Quick start guide
 ├── docs/                  # Documentation
@@ -593,15 +599,15 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 ## 📞 Support
 
 - 📖 Documentation: [docs/](docs/)
-- 🐛 Issues: [GitHub Issues](https://github.com/lukema95/roma-01/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/lukema95/roma-01/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/BoringIdea/ludus-trading/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/BoringIdea/ludus-trading/discussions)
 - 📧 Email: lukema95@gmail.com
 
 ---
 
 ## 🙏 Acknowledgments
 
-- **ROMA Framework**: For the hierarchical multi-agent architecture - see [ROMA documentation](../ROMA/README.md)
+- **ROMA Framework**: For the hierarchical multi-agent architecture - see the [ROMA documentation](https://github.com/sentient-agi/ROMA)
 - **NOF1.ai**: For early design inspiration on multi-model comparison interfaces
 - **DSPy**: For structured AI prompting and agent orchestration
 - **Aster Finance**: For the DEX integration and Web3 trading infrastructure

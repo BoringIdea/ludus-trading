@@ -1,6 +1,6 @@
 # Installation Guide
 
-Complete installation guide for ROMA-01 Trading Platform.
+Complete installation guide for Ludus Trading Platform.
 
 ---
 
@@ -46,8 +46,8 @@ Complete installation guide for ROMA-01 Trading Platform.
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/lukema95/roma-01.git
-cd roma-01
+git clone https://github.com/BoringIdea/ludus-trading.git
+cd ludus-trading
 ```
 
 ### 2. Backend Setup
@@ -138,7 +138,7 @@ python -m roma_trading.main
 **Expected Output**:
 ```
 ============================================================
-🚀 Starting ROMA-01 Trading Platform
+🚀 Starting Ludus Trading Platform
 ============================================================
 API Server: http://0.0.0.0:8080
 CORS Origins: http://localhost:3000
@@ -343,8 +343,8 @@ After installation:
 ## 🆘 Need Help?
 
 - 📖 [Troubleshooting Guide](troubleshooting.md)
-- 🐛 [GitHub Issues](https://github.com/lukema95/roma-01/issues)
-- 💬 [Discussions](https://github.com/lukema95/roma-01/discussions)
+- 🐛 [GitHub Issues](https://github.com/BoringIdea/ludus-trading/issues)
+- 💬 [Discussions](https://github.com/BoringIdea/ludus-trading/discussions)
 - 📧 Email: lukema95@github.com
 
 ---

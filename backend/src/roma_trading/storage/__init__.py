@@ -1,4 +1,4 @@
-"""Storage abstraction layer for ROMA Trading Platform."""
+"""Storage abstraction layer for Ludus Trading Platform."""
 
 from .interfaces import (
     TradeStorage,

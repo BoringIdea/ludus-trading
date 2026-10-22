@@ -1,9 +1,9 @@
 #!/bin/bash
-# ROMA Trading Platform - Setup Script
+# Ludus Trading Platform - Setup Script
 
 set -e
 
-echo "🚀 ROMA Trading Platform - Backend Setup"
+echo "🚀 Ludus Trading Platform - Backend Setup"
 echo "========================================"
 echo ""
 

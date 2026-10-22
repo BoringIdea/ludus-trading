@@ -1,4 +1,4 @@
-"""Database models and services for ROMA Trading Platform."""
+"""Database models and services for Ludus Trading Platform."""
 
 from .base import Base, get_session, init_db, get_async_session
 from .models import (

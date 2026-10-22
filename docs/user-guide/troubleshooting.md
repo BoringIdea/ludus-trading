@@ -1,6 +1,6 @@
 # Troubleshooting Guide
 
-Common issues and solutions for the ROMA Trading Platform.
+Common issues and solutions for the Ludus Trading Platform.
 
 ---
 

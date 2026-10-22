@@ -1,6 +1,6 @@
-# Contributing to ROMA-01
+# Contributing to Ludus
 
-First off, thank you for considering contributing to ROMA-01! It's people like you that make ROMA-01 such a great tool.
+First off, thank you for considering contributing to Ludus! It's people like you that make Ludus such a great tool.
 
 ## 📋 Table of Contents
 
@@ -36,7 +36,7 @@ Before creating bug reports, please check the existing issues to avoid duplicate
   - OS: [e.g., macOS 14.0, Ubuntu 22.04]
   - Python version: [e.g., 3.12.0]
   - Node.js version: [e.g., 18.17.0]
-  - AI-01 version: [e.g., 1.1.0]
+  - Ludus version: [e.g., 1.1.0]
 
 **Template:**
 ```markdown
@@ -58,7 +58,7 @@ If applicable, add screenshots or log output.
 - OS: 
 - Python: 
 - Node.js: 
-- ROMA-01 version: 
+- Ludus version: 
 ```
 
 ### 💡 Suggesting Enhancements
@@ -113,11 +113,11 @@ Any alternative solutions or features considered?
 
 ```bash
 # Fork the repository on GitHub, then clone your fork
-git clone https://github.com/lukema95/roma-01.git
-cd roma-01
+git clone https://github.com/BoringIdea/ludus-trading.git
+cd ludus-trading
 
 # Add upstream remote
-git remote add upstream https://github.com/lukema95/roma-01.git
+git remote add upstream https://github.com/BoringIdea/ludus-trading.git
 ```
 
 ### Backend Setup
@@ -402,7 +402,7 @@ Closes #123
 
 ### New LLM Provider
 
-1. Add provider to `backend/src/ai01/agents/trading_agent.py`
+1. Add provider to `backend/src/roma_trading/agents/trading_agent.py`
 2. Create example config in `backend/config/models/`
 3. Add provider to documentation
 4. Add logo to `frontend/public/logos/`
@@ -410,7 +410,7 @@ Closes #123
 
 ### New Exchange
 
-1. Create new toolkit in `backend/src/ai01/toolkits/`
+1. Create new toolkit in `backend/src/roma_trading/toolkits/`
 2. Inherit from `BaseDEXToolkit`
 3. Implement all required methods
 4. Add configuration support
@@ -433,7 +433,7 @@ Closes #123
 ```python
 # backend/tests/test_risk_management.py
 import pytest
-from ai01.agents.trading_agent import check_single_trade_limit
+from roma_trading.agents.trading_agent import check_single_trade_limit
 
 def test_single_trade_limit_no_positions():
     """Test single trade limit when no positions exist."""
@@ -497,8 +497,8 @@ describe('AgentCard', () => {
 ### Getting Help
 
 - 📖 Read the [documentation](docs/)
-- 🐛 GitHub Issues: [https://github.com/lukema95/roma-01/issues](https://github.com/lukema95/roma-01/issues)
-- 💬 Discussions: [https://github.com/lukema95/roma-01/discussions](https://github.com/lukema95/roma-01/discussions)
+- 🐛 GitHub Issues: [https://github.com/BoringIdea/ludus-trading/issues](https://github.com/BoringIdea/ludus-trading/issues)
+- 💬 Discussions: [https://github.com/BoringIdea/ludus-trading/discussions](https://github.com/BoringIdea/ludus-trading/discussions)
 - 📧 Email: lukema95@gmail.com
 
 ### Recognition
@@ -516,7 +516,7 @@ By contributing, you agree that your contributions will be licensed under the sa
 
 ---
 
-**Thank you for contributing to ROMA-01! 🚀**
+**Thank you for contributing to Ludus! 🚀**
 
 We appreciate your time and effort in making this project better for everyone.
 

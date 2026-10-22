@@ -2,7 +2,7 @@
 
 ## Overview
 
-ROMA Trading Platform uses an **account-centric architecture** where:
+Ludus Trading Platform uses an **account-centric architecture** where:
 - **DEX Accounts** and **LLM Models** are decoupled and defined independently
 - **Agents** bind an account, a model, and a trading strategy together
 - Each agent can use any DEX (Aster or Hyperliquid) with any LLM model
@@ -18,7 +18,7 @@ This architecture provides:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│              ROMA Trading Platform                           │
+│              Ludus Trading Platform                          │
 ├─────────────────────────────────────────────────────────────┤
 │                                                              │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐        │

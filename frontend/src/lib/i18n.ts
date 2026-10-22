@@ -1,5 +1,5 @@
 /**
- * Internationalization translations for ROMA-01
+ * Internationalization translations for Ludus
  */
 
 export const translations = {
@@ -262,24 +262,24 @@ Long-short balance:
     
     // About page
     about: {
-      title: "ROMA-01",
+      title: "Ludus",
       
       // Paragraphs
-      intro: `ROMA-01 is an AI-powered cryptocurrency futures trading platform for running multiple LLM-based agents in live markets. It combines automated trading with a full-featured monitoring dashboard, leaderboard, and AI assistant services, all powered by the ROMA (Recursive Open Meta-Agents) framework.`,
+      intro: `Ludus is an AI-powered cryptocurrency futures trading platform for running multiple LLM-based agents in live markets. It combines automated trading with a full-featured monitoring dashboard, leaderboard, and AI assistant services, all powered by the ROMA (Recursive Open Meta-Agents) framework.`,
       
       multiModel: `The platform allows you to run up to 6 different AI models simultaneously—DeepSeek, Qwen, Claude, Grok, Gemini, and GPT—each managing its own independent trading account on live cryptocurrency futures markets. You can observe how different models trade BTC, ETH, SOL, BNB, DOGE, and XRP perpetual futures under the same market conditions.`,
       
       nof1Interface: `The frontend focuses on operational transparency rather than simple model comparison. You can monitor account values, P/L, open positions, completed trades, and decision logs for each agent, and quickly understand how AI-driven trading impacts overall portfolio risk and performance.`,
       
-      romaFramework: `Under the hood, ROMA-01 is built on the ROMA Framework, a meta-agent system that fundamentally differs from traditional LLM agent trading approaches. Instead of a single monolithic agent, ROMA uses hierarchical recursive decomposition to structure complex trading decisions into manageable components.`,
+      romaFramework: `Under the hood, Ludus is built on the ROMA Framework, a meta-agent system that fundamentally differs from traditional LLM agent trading approaches. Instead of a single monolithic agent, ROMA uses hierarchical recursive decomposition to structure complex trading decisions into manageable components.`,
       
       romaProcess: `ROMA processes tasks through a structured loop: an Atomizer decides if task decomposition is needed; a Planner breaks complex goals into subtasks; Executors handle atomic trading decisions; an Aggregator synthesizes results into final actions; and a Verifier (optional) validates output quality. This creates clear task decomposition and transparent reasoning chains at each level of decision-making.`,
       
       tradingContext: `In trading contexts, ROMA decomposes complex market analysis into components like technical analysis, sentiment, and risk assessment. It aggregates multiple perspectives before making final trading decisions, maintains transparent reasoning at each abstraction level, and can re-plan at different levels to recover from errors—capabilities that traditional monolithic agents cannot match.`,
       
-      platformFeatures: `ROMA-01 includes a 4-layer risk management system with position limits, direct Web3 integration with Aster Finance and Hyperliquid DEXs, comprehensive technical analysis using TA-Lib indicators (RSI, MACD, EMA, ATR, Bollinger Bands), complete decision history logging with AI reasoning for every trade, and an AI chat assistant that also supports token analysis requests.`,
+      platformFeatures: `Ludus includes a 4-layer risk management system with position limits, direct Web3 integration with Aster Finance and Hyperliquid DEXs, comprehensive technical analysis using TA-Lib indicators (RSI, MACD, EMA, ATR, Bollinger Bands), complete decision history logging with AI reasoning for every trade, and an AI chat assistant that also supports token analysis requests.`,
       
-      quote: "Hierarchical recursive decomposition and multi-agent design enable ROMA-01 to trade complex markets with transparency and control.",
+      quote: "Hierarchical recursive decomposition and multi-agent design enable Ludus to trade complex markets with transparency and control.",
       
       // Section titles
       romaVsTraditional: "ROMA vs Traditional LLM Agent Trading",
@@ -584,24 +584,24 @@ Long-short balance:
     
     // About page
     about: {
-      title: "ROMA-01",
+      title: "Ludus",
       
       // Paragraphs
-      intro: `ROMA-01 是一个 AI 驱动的加密货币合约交易平台，可在真实市场中运行多个基于 LLM 的交易智能体，结合完整的监控仪表板、排行榜和 AI 助手服务，由 ROMA（递归开放元智能体）框架驱动。`,
+      intro: `Ludus 是一个 AI 驱动的加密货币合约交易平台，可在真实市场中运行多个基于 LLM 的交易智能体，结合完整的监控仪表板、排行榜和 AI 助手服务，由 ROMA（递归开放元智能体）框架驱动。`,
       
       multiModel: `本平台允许你同时运行多达 6 个不同的 AI 模型——DeepSeek、Qwen、Claude、Grok、Gemini 和 GPT——每个模型管理自己独立的交易账户，在实时加密货币合约市场上交易。你可以在相同市场环境下观察不同模型如何交易 BTC、ETH、SOL、BNB、DOGE 和 XRP 等永续合约。`,
       
       nof1Interface: `前端界面以交易运营透明度为核心，而不是简单的模型对比。你可以查看每个智能体的账户价值、盈亏、当前持仓、已完成交易和详细决策日志，快速理解 AI 交易行为对整体账户风险和收益的影响。`,
       
-      romaFramework: `在底层，ROMA-01 基于 ROMA 框架构建，这是一个与传统 LLM 智能体交易方法根本不同的元智能体系统。它并非依赖单一整体智能体，而是通过分层递归分解，将复杂的交易决策结构化为可管理的子任务。`,
+      romaFramework: `在底层，Ludus 基于 ROMA 框架构建，这是一个与传统 LLM 智能体交易方法根本不同的元智能体系统。它并非依赖单一整体智能体，而是通过分层递归分解，将复杂的交易决策结构化为可管理的子任务。`,
       
       romaProcess: `ROMA 通过一个结构化循环处理任务：原子化器判断是否需要任务分解；规划器将复杂目标拆解为子任务；执行器处理原子化的交易决策；聚合器将结果综合为最终行动；验证器（可选）用于校验输出质量。这样在每个决策层级都形成了清晰的任务分解与透明的推理链。`,
       
       tradingContext: `在交易场景中，ROMA 会把复杂的市场分析分解为技术分析、情绪分析、风险评估等多个组件，在做出最终交易决策前聚合多种视角，并在每个抽象层级保持透明推理。必要时可以在不同层级重新规划，以从错误中恢复——这些能力是传统整体智能体难以实现的。`,
       
-      platformFeatures: `ROMA-01 提供带持仓限制的 4 层风险管理系统、与 Aster Finance 和 Hyperliquid DEX 的直接 Web3 集成、基于 TA-Lib 指标（RSI、MACD、EMA、ATR、布林带）的全面技术分析、每笔交易的完整决策历史与 AI 推理记录，以及支持代币分析请求的 AI 聊天助手。`,
+      platformFeatures: `Ludus 提供带持仓限制的 4 层风险管理系统、与 Aster Finance 和 Hyperliquid DEX 的直接 Web3 集成、基于 TA-Lib 指标（RSI、MACD、EMA、ATR、布林带）的全面技术分析、每笔交易的完整决策历史与 AI 推理记录，以及支持代币分析请求的 AI 聊天助手。`,
       
-      quote: "分层递归分解与多智能体设计，让 ROMA-01 能够在复杂市场中以透明且可控的方式进行交易。",
+      quote: "分层递归分解与多智能体设计，让 Ludus 能够在复杂市场中以透明且可控的方式进行交易。",
       
       // Section titles
       romaVsTraditional: "ROMA vs 传统 LLM 智能体交易",

@@ -19,7 +19,7 @@ const brandFont = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "ROMA-01 - AI-Powered Crypto Trading Platform",
+  title: "Ludus - AI-Powered Crypto Trading Platform",
   description: "Multi-agent AI cryptocurrency futures trading platform with 6 LLM models",
 };
 

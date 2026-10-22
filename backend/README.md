@@ -1,6 +1,6 @@
-# ROMA Trading Backend
+# Ludus Trading Backend
 
-Python backend for ROMA Trading Platform powered by FastAPI, DSPy, and multiple LLM integrations.
+Python backend for Ludus Trading Platform powered by FastAPI, DSPy, and multiple LLM integrations.
 
 ## Quick Start
 

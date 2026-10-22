@@ -1,5 +1,5 @@
 /**
- * API client for ROMA-01 Trading backend
+ * API client for Ludus Trading backend
  */
 
 import type {

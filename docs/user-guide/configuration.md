@@ -1,6 +1,6 @@
 # Configuration Guide
 
-Complete guide to configuring the ROMA Trading Platform with account-centric architecture and multi-DEX support.
+Complete guide to configuring the Ludus Trading Platform with account-centric architecture and multi-DEX support.
 
 ---
 
@@ -47,7 +47,7 @@ Complete guide to configuring the ROMA Trading Platform with account-centric arc
 
 ## 🏗️ Account-Centric Architecture
 
-ROMA-01 uses an **account-centric** configuration model that decouples DEX accounts from LLM models, allowing flexible combinations:
+Ludus uses an **account-centric** configuration model that decouples DEX accounts from LLM models, allowing flexible combinations:
 
 - **Accounts**: Define DEX trading accounts (Aster, Hyperliquid, etc.)
 - **Models**: Define LLM configurations (DeepSeek, Qwen, Claude, etc.)  

@@ -1,4 +1,4 @@
-// Model metadata for ROMA-01 Trading Platform
+// Model metadata for Ludus Trading Platform
 
 export interface ModelMeta {
   id: string;

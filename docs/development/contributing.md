@@ -1,4 +1,4 @@
-# Contributing to ROMA-01
+# Contributing to Ludus
 
 For contribution guidelines, please see the main [CONTRIBUTING.md](../../CONTRIBUTING.md) file in the project root.
 

@@ -1,17 +1,17 @@
 {
-  "name": "roma01-frontend",
+  "name": "ludus-frontend",
   "version": "1.1.0",
-  "description": "ROMA-01 Trading Platform Dashboard",
+  "description": "Ludus Trading Platform Dashboard",
   "author": "Luke Ma <lukema95@github.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lukema95/roma-01"
+    "url": "https://github.com/BoringIdea/ludus-trading"
   },
   "bugs": {
-    "url": "https://github.com/lukema95/roma-01/issues"
+    "url": "https://github.com/BoringIdea/ludus-trading/issues"
   },
-  "homepage": "https://github.com/lukema95/roma-01#readme",
+  "homepage": "https://github.com/BoringIdea/ludus-trading#readme",
   "private": true,
   "scripts": {
     "dev": "next dev",

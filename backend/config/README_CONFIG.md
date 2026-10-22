@@ -1,4 +1,4 @@
-# ROMA Trading Platform - Configuration Guide
+# Ludus Trading Platform - Configuration Guide
 
 **Language / 语言选择:** [English](README_CONFIG.md) · [中文](README_CONFIG.zh-CN.md)
 
@@ -18,7 +18,7 @@ See `QUICK_START.md` for step-by-step instructions.
 
 ## Overview
 
-ROMA Trading Platform supports **two configuration styles**:
+Ludus Trading Platform supports **two configuration styles**:
 
 1. **Legacy Style** (backward compatible): Each agent has its own config file
 2. **Account-Centric Style** (new, recommended): Three-segment configuration (accounts/models/agents)

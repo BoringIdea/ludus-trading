@@ -54,7 +54,7 @@ service_manager: Optional[ServiceManager] = None
 async def lifespan(app: FastAPI):
     """Application lifespan manager."""
     # Startup
-    logger.info("Starting ROMA-01 Trading Platform...")
+    logger.info("Starting Ludus Trading Platform...")
     
     global trade_history_analyzer, analysis_scheduler, large_trade_store, large_trade_streamer, dashboard_service
     global service_manager
@@ -172,7 +172,7 @@ async def lifespan(app: FastAPI):
 
 # Create FastAPI app
 app = FastAPI(
-    title="ROMA-01 Trading API",
+    title="Ludus Trading API",
     description="AI-powered cryptocurrency futures trading platform",
     version="1.1.0",
     lifespan=lifespan,
@@ -218,7 +218,7 @@ app.include_router(dashboard_routes.router)
 async def root():
     """API root endpoint."""
     return {
-        "name": "ROMA-01 Trading API",
+        "name": "Ludus Trading API",
         "version": "1.1.0",
         "status": "running",
     }

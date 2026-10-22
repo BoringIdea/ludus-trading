@@ -1,6 +1,6 @@
 # REST API Reference
 
-Complete reference for ROMA-01 REST API endpoints.
+Complete reference for Ludus REST API endpoints.
 
 ---
 
@@ -28,7 +28,7 @@ Get API root information.
 **Response**:
 ```json
 {
-  "name": "ROMA-01 Trading API",
+  "name": "Ludus Trading API",
   "version": "1.1.0",
   "status": "running"
 }
