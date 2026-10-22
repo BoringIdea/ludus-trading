@@ -1,4 +1,4 @@
-"""Database service layer for ROMA Trading Platform."""
+"""Database service layer for Ludus Trading Platform."""
 
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, desc, and_, or_, func

@@ -1,6 +1,6 @@
 # Deployment Guide
 
-How to deploy the ROMA Trading Platform to production.
+How to deploy the Ludus Trading Platform to production.
 
 ---
 
@@ -51,7 +51,7 @@ How to deploy the ROMA Trading Platform to production.
 ```bash
 # 1. Clone repository
 git clone <repository-url>
-cd roma-01
+cd ludus-trading
 
 # 2. Backend setup
 cd backend
@@ -189,23 +189,23 @@ services:
 ```bash
 # Backend
 cd backend
-docker build -t roma-trading-backend .
+docker build -t ludus-backend .
 docker run -d \
   -p 8080:8080 \
   --env-file .env \
   -v $(pwd)/config:/app/config \
   -v $(pwd)/logs:/app/logs \
-  --name roma-backend \
-  roma-trading-backend
+  --name ludus-backend \
+  ludus-backend
 
 # Frontend
 cd frontend
-docker build -t roma-trading-frontend .
+docker build -t ludus-frontend .
 docker run -d \
   -p 3000:3000 \
   -e NEXT_PUBLIC_API_URL=http://localhost:8080 \
-  --name roma-frontend \
-  roma-trading-frontend
+  --name ludus-frontend \
+  ludus-frontend
 ```
 
 ---
@@ -232,7 +232,7 @@ sudo apt install -y python3.12 python3.12-venv nodejs npm git
 
 # 4. Clone and setup
 git clone <repository-url>
-cd roma-01
+cd ludus-trading
 cd backend && ./setup.sh
 cd ../frontend && npm install
 ```
@@ -242,7 +242,7 @@ cd ../frontend && npm install
 ```yaml
 # task-definition.json
 {
-  "family": "roma-trading",
+  "family": "ludus",
   "networkMode": "awsvpc",
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "1024",
@@ -250,7 +250,7 @@ cd ../frontend && npm install
   "containerDefinitions": [
     {
       "name": "backend",
-      "image": "your-registry/roma-trading-backend:latest",
+      "image": "your-registry/ludus-backend:latest",
       "portMappings": [
         {
           "containerPort": 8080,
@@ -272,13 +272,13 @@ cd ../frontend && npm install
 
 ```bash
 # 1. Create Compute Engine instance
-gcloud compute instances create roma-trading \
+gcloud compute instances create ludus \
   --machine-type=e2-medium \
   --image-family=ubuntu-2204-lts \
   --image-project=ubuntu-os-cloud
 
 # 2. SSH and setup
-gcloud compute ssh roma-trading
+gcloud compute ssh ludus
 # Follow local deployment steps
 ```
 
@@ -342,19 +342,19 @@ ssh root@<droplet-ip>
 
 ```bash
 # 1. Create service file
-sudo nano /etc/systemd/system/roma-trading.service
+sudo nano /etc/systemd/system/ludus-backend.service
 
 # Content:
 [Unit]
-Description=ROMA Trading Platform
+Description=Ludus Trading Platform
 After=network.target
 
 [Service]
 Type=simple
 User=ubuntu
-WorkingDirectory=/home/ubuntu/roma-01/backend
-Environment="PATH=/home/ubuntu/roma-01/backend/venv/bin"
-ExecStart=/home/ubuntu/roma-01/backend/venv/bin/python -m roma_trading.main
+WorkingDirectory=/home/ubuntu/ludus-trading/backend
+Environment="PATH=/home/ubuntu/ludus-trading/backend/venv/bin"
+ExecStart=/home/ubuntu/ludus-trading/backend/venv/bin/python -m roma_trading.main
 Restart=always
 RestartSec=10
 
@@ -362,14 +362,14 @@ RestartSec=10
 WantedBy=multi-user.target
 
 # 2. Enable and start
-sudo systemctl enable roma-trading
-sudo systemctl start roma-trading
+sudo systemctl enable ludus-backend
+sudo systemctl start ludus-backend
 
 # 3. Check status
-sudo systemctl status roma-trading
+sudo systemctl status ludus-backend
 
 # 4. View logs
-sudo journalctl -u roma-trading -f
+sudo journalctl -u ludus-backend -f
 ```
 
 #### Using Supervisor
@@ -379,22 +379,22 @@ sudo journalctl -u roma-trading -f
 sudo apt install supervisor
 
 # 2. Create config
-sudo nano /etc/supervisor/conf.d/roma-trading.conf
+sudo nano /etc/supervisor/conf.d/ludus-backend.conf
 
 # Content:
-[program:roma-trading]
-command=/home/ubuntu/roma-01/backend/venv/bin/python -m roma_trading.main
-directory=/home/ubuntu/roma-01/backend
+[program:ludus-backend]
+command=/home/ubuntu/ludus-trading/backend/venv/bin/python -m roma_trading.main
+directory=/home/ubuntu/ludus-trading/backend
 autostart=true
 autorestart=true
 user=ubuntu
 redirect_stderr=true
-stdout_logfile=/var/log/roma-trading.log
+stdout_logfile=/var/log/ludus-backend.log
 
 # 3. Update supervisor
 sudo supervisorctl reread
 sudo supervisorctl update
-sudo supervisorctl start roma-trading
+sudo supervisorctl start ludus-backend
 
 # 4. Check status
 sudo supervisorctl status
@@ -424,7 +424,7 @@ ps aux | grep roma_trading
 ```bash
 # Simple email alert on errors
 # Add to crontab:
-*/5 * * * * grep -i error /path/to/roma_trading_*.log | mail -s "ROMA Error Alert" your@email.com
+*/5 * * * * grep -i error /path/to/roma_trading_*.log | mail -s "Ludus Error Alert" your@email.com
 
 # Disk space alert
 */30 * * * * [ $(df / | tail -1 | awk '{print $5}' | sed 's/%//') -gt 80 ] && echo "Disk >80%" | mail -s "Disk Alert" your@email.com
@@ -483,10 +483,10 @@ tar -czf backup-$(date +%Y%m%d).tar.gz backend/config
 
 ```bash
 # Configure logrotate
-sudo nano /etc/logrotate.d/roma-trading
+sudo nano /etc/logrotate.d/ludus-backend
 
 # Content:
-/home/ubuntu/roma-01/backend/logs/*.log {
+/home/ubuntu/ludus-trading/backend/logs/*.log {
     daily
     rotate 30
     compress
@@ -495,7 +495,7 @@ sudo nano /etc/logrotate.d/roma-trading
     create 0640 ubuntu ubuntu
     sharedscripts
     postrotate
-        systemctl reload roma-trading > /dev/null 2>&1 || true
+        systemctl reload ludus-backend > /dev/null 2>&1 || true
     endscript
 }
 ```
@@ -527,7 +527,7 @@ sudo ufw allow 8080/tcp  # Backend API
 sudo apt install nginx certbot python3-certbot-nginx
 
 # Configure nginx
-sudo nano /etc/nginx/sites-available/roma-trading
+sudo nano /etc/nginx/sites-available/ludus
 
 # Content:
 server {
@@ -549,7 +549,7 @@ server {
 }
 
 # Enable site
-sudo ln -s /etc/nginx/sites-available/roma-trading /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/ludus /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
 
@@ -563,7 +563,7 @@ sudo certbot --nginx -d your-domain.com
 
 ```bash
 # 1. Stop services
-sudo systemctl stop roma-trading
+sudo systemctl stop ludus-backend
 # or
 docker-compose down
 
@@ -572,7 +572,7 @@ cd /home/ubuntu
 tar -xzf backup-YYYYMMDD.tar.gz
 
 # 3. Restart services
-sudo systemctl start roma-trading
+sudo systemctl start ludus-backend
 # or
 docker-compose up -d
 

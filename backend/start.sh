@@ -1,9 +1,9 @@
 #!/bin/bash
-# ROMA Trading Platform - Quick Start Script
+# Ludus Trading Platform - Quick Start Script
 
 set -e
 
-echo "🚀 Starting ROMA Trading Platform Backend..."
+echo "🚀 Starting Ludus Trading Platform Backend..."
 echo ""
 
 # Ensure main trading config exists (auto-create from example if missing)

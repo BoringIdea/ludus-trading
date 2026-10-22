@@ -22,8 +22,8 @@ export default function AboutPage() {
               letterSpacing: "0.02em"
             }}
           >
-            <span className="text-5xl">R</span>
-            <span>OMA-01</span>
+            <span className="text-5xl">L</span>
+            <span>udus</span>
           </div>
         </div>
 

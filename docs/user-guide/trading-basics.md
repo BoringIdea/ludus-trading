@@ -1,6 +1,6 @@
 # Trading Basics
 
-Learn how ROMA-01 makes trading decisions and how to interpret the results.
+Learn how Ludus makes trading decisions and how to interpret the results.
 
 ---
 
@@ -19,7 +19,7 @@ Learn how ROMA-01 makes trading decisions and how to interpret the results.
 
 ### Overview
 
-ROMA-01 is an AI-powered trading system that:
+Ludus is an AI-powered trading system that:
 
 1. **Scans Markets** every 3 minutes
 2. **Analyzes Data** using technical indicators

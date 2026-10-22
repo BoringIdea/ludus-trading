@@ -1,4 +1,4 @@
-# ROMA-01：AI 驱动的加密货币合约交易平台
+# Ludus：AI 驱动的加密货币合约交易平台
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
@@ -8,6 +8,8 @@
 一个 **AI 驱动的加密货币合约交易**平台，可在真实市场中运行多个基于 LLM 的交易智能体，提供完整的监控仪表板、排行榜和 AI 助手服务，由 **ROMA（递归开放元智能体）**框架驱动。
 
 [English](README.md) | 简体中文
+
+> **命名说明：** 本项目已由 **ROMA-01** 更名为 **Ludus**。为保持向后兼容，Python 包名（`roma_trading`）、发行名（`roma01`）、数据库文件（`backend/data/roma_trading.db`）、日志文件与认证密钥仍沿用原有标识，已有部署无需迁移。
 
 ---
 
@@ -105,8 +107,8 @@ ROMA 是一个**元智能体框架**，使用递归分层结构来解决复杂�
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/lukema95/roma-01.git
-cd roma-01
+git clone https://github.com/BoringIdea/ludus-trading.git
+cd ludus-trading
 
 # 2. 后端设置
 cd backend
@@ -213,7 +215,7 @@ npm run dev
 
 ### 账户中心化架构
 
-ROMA-01 使用**账户中心化**配置模型，其中：
+Ludus 使用**账户中心化**配置模型，其中：
 - **账户 (Accounts)** 定义 DEX 交易账户（Aster、Hyperliquid 等）
 - **模型 (Models)** 定义 LLM 配置（DeepSeek、Qwen、Claude 等）
 - **智能体 (Agents)** 将账户与模型绑定以创建交易智能体
@@ -396,7 +398,7 @@ risk_management:
 
 ## 🖥️ 用户界面
 
-ROMA-01 的界面围绕 **实盘交易运营、监控与分析** 设计：
+Ludus 的界面围绕 **实盘交易运营、监控与分析** 设计：
 
 ### 实时交易仪表板
 - **多智能体概览**：同时监控多达 6 个不同的 LLM 模型交易
@@ -481,7 +483,7 @@ _截图即将推出_
 ## 📝 项目结构
 
 ```
-roma-01/
+ludus-trading/
 ├── README.md              # 本文件
 ├── README.zh-CN.md        # 中文文档
 ├── QUICKSTART.md          # 快速开始指南
@@ -566,8 +568,8 @@ MIT 许可证 - 详见 [LICENSE](LICENSE) 文件。
 ## 📞 支持
 
 - 📖 文档：[docs/](docs/)
-- 🐛 问题：[GitHub Issues](https://github.com/lukema95/roma-01/issues)
-- 💬 讨论：[GitHub Discussions](https://github.com/lukema95/roma-01/discussions)
+- 🐛 问题：[GitHub Issues](https://github.com/BoringIdea/ludus-trading/issues)
+- 💬 讨论：[GitHub Discussions](https://github.com/BoringIdea/ludus-trading/discussions)
 - 📧 邮箱：lukema95@gmail.com
 
 ### 文件数据迁移到 SQLite 数据库

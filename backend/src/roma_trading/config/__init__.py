@@ -1,4 +1,4 @@
-"""Configuration management for ROMA-01."""
+"""Configuration management for Ludus."""
 
 from .settings import Settings, get_settings
 

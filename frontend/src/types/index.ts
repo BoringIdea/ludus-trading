@@ -1,5 +1,5 @@
 /**
- * TypeScript type definitions for ROMA-01 Trading Platform
+ * TypeScript type definitions for Ludus Trading Platform
  */
 
 export interface Agent {

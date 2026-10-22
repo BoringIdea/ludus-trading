@@ -1,6 +1,6 @@
 # WebSocket API Reference
 
-Real-time updates for ROMA-01 Trading Platform.
+Real-time updates for Ludus Trading Platform.
 
 ---
 

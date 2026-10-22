@@ -1,6 +1,6 @@
-# ROMA-01 Documentation
+# Ludus Documentation
 
-Complete documentation for the ROMA-01 AI-powered cryptocurrency futures trading platform.
+Complete documentation for the Ludus AI-powered cryptocurrency futures trading platform.
 
 ---
 
@@ -183,7 +183,7 @@ docs/
 
 ### I want to... (Find the right doc)
 
-**...set up ROMA-01**  
+**...set up Ludus**  
 → [Installation Guide](user-guide/installation.md)
 
 **...configure trading parameters**  
@@ -248,13 +248,13 @@ tail -f backend/logs/roma_trading_$(date +%Y-%m-%d).log
 - Use browser search (Ctrl/Cmd + F) within documents
 - Check the [Troubleshooting Guide](user-guide/troubleshooting.md) first for errors
 - API questions? Start with [Examples](api/examples.md)
-- Can't find something? Check the [GitHub Discussions](https://github.com/lukema95/roma-01/discussions)
+- Can't find something? Check the [GitHub Discussions](https://github.com/BoringIdea/ludus-trading/discussions)
 
 ### Staying Updated
 
-- Watch the [GitHub repository](https://github.com/lukema95/roma-01)
+- Watch the [GitHub repository](https://github.com/BoringIdea/ludus-trading)
 - Check [CHANGELOG.md](../CHANGELOG.md) for version updates
-- Subscribe to [GitHub Releases](https://github.com/lukema95/roma-01/releases)
+- Subscribe to [GitHub Releases](https://github.com/BoringIdea/ludus-trading/releases)
 
 ---
 

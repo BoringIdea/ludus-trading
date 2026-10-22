@@ -1,8 +1,8 @@
-# ROMA-01 Trading Configuration Guide
+# Ludus Trading Configuration Guide
 
 **语言选择 / Language:** [English](README.md) · [中文](README.zh-CN.md)
 
-This directory contains configuration files for the ROMA-01 trading platform.
+This directory contains configuration files for the Ludus trading platform.
 
 ## ⚠️ Configuration Update
 

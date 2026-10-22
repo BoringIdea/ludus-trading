@@ -2,7 +2,7 @@
 
 ## Overview
 
-ROMA-01 frontend supports bilingual interface: **English** and **简体中文**.
+Ludus frontend supports bilingual interface: **English** and **简体中文**.
 
 ## Quick Usage
 

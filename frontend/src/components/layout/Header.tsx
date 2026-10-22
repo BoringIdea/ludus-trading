@@ -56,13 +56,13 @@ export function Header() {
         <div className="flex min-w-0 flex-1">
           <Link
             href="/"
-            className="text-2xl font-black uppercase hover:opacity-70 transition-transform tracking-tight italic"
+            className="text-2xl font-black hover:opacity-70 transition-transform tracking-tight italic"
             style={{
               color: "#000000",
               fontFamily: "var(--font-brand)",
             }}
           >
-            ROMA-01
+            Ludus
           </Link>
         </div>
 
@@ -252,7 +252,7 @@ export function Header() {
           <div className="flex items-center gap-2">
             {/* GitHub */}
             <a
-              href="https://github.com/lukema95/roma-01"
+              href="https://github.com/BoringIdea/ludus-trading"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open GitHub repository"

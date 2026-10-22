@@ -1,10 +1,10 @@
-# ROMA AI Trading Platform - Architecture Design Document
+# Ludus AI Trading Platform - Architecture Design Document
 
 ## 📋 Document Information
 
 | Item | Content |
 |------|---------|
-| **Project Name** | ROMA AI Crypto Futures Trading Platform |
+| **Project Name** | Ludus AI Crypto Futures Trading Platform |
 | **Version** | v1.1.0 |
 | **Date** | November 2, 2025 |
 | **Status** | Production |
@@ -139,7 +139,7 @@ date-fns                   // Date utilities
 ### 1.3 Project Structure
 
 ```
-roma-01/
+ludus-trading/
 ├── backend/
 │   ├── config/
 │   │   ├── README.md                    # Configuration guide
@@ -1336,11 +1336,11 @@ npm run dev
 **Process Management**:
 ```bash
 # Using screen
-screen -S roma-backend
+screen -S ludus-backend
 cd backend && ./start.sh
 # Ctrl+A, D to detach
 
-screen -S roma-frontend
+screen -S ludus-frontend
 cd frontend && npm run dev
 # Ctrl+A, D to detach
 
@@ -1348,7 +1348,7 @@ cd frontend && npm run dev
 screen -ls
 
 # Reattach
-screen -r roma-backend
+screen -r ludus-backend
 ```
 
 ### 7.2 Docker Deployment
@@ -1431,17 +1431,17 @@ server {
 }
 ```
 
-**systemd Service** (`/etc/systemd/system/roma-backend.service`):
+**systemd Service** (`/etc/systemd/system/ludus-backend.service`):
 ```ini
 [Unit]
-Description=ROMA Trading Backend
+Description=Ludus Trading Backend
 After=network.target
 
 [Service]
 Type=simple
 User=ubuntu
-WorkingDirectory=/home/ubuntu/roma-01/backend
-ExecStart=/home/ubuntu/roma-01/backend/venv/bin/python -m roma_trading.main
+WorkingDirectory=/home/ubuntu/ludus-trading/backend
+ExecStart=/home/ubuntu/ludus-trading/backend/venv/bin/python -m roma_trading.main
 Restart=always
 RestartSec=10
 
@@ -1452,14 +1452,14 @@ WantedBy=multi-user.target
 **Commands**:
 ```bash
 # Enable and start
-sudo systemctl enable roma-backend
-sudo systemctl start roma-backend
+sudo systemctl enable ludus-backend
+sudo systemctl start ludus-backend
 
 # Check status
-sudo systemctl status roma-backend
+sudo systemctl status ludus-backend
 
 # View logs
-sudo journalctl -u roma-backend -f
+sudo journalctl -u ludus-backend -f
 ```
 
 ---

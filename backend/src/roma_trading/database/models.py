@@ -1,4 +1,4 @@
-"""Database models for ROMA Trading Platform."""
+"""Database models for Ludus Trading Platform."""
 
 from sqlalchemy import Column, Integer, String, Float, Boolean, DateTime, Text, Index
 from sqlalchemy.sql import func
